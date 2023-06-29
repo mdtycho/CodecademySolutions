@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cheatsheet| CSS selectors and specificity</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>CSS selectors and specificity</h1>  
+        <table>
+            <caption>Selectors & their specificity</caption>
+            <thead>
+                <tr>
+                    <th>Selector Name</th>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>
+                        Specificity <br/>
+                        [inline styles]-[ID selectors]-[class/attribute/pseudo selectors]
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Element Selector</td>
+                    <td>element</td>
+                    <td>div</td>
+                    <td>1-0-0</td>
+                </tr>
+
+                <tr>
+                    <td>Class Selector</td>
+                    <td>.class</td>
+                    <td>.my-class</td>
+                    <td>0-0-1</td>
+                </tr>
+
+                <tr>
+                    <td>ID Selector</td>
+                    <td>#id</td>
+                    <td>#my-id</td>
+                    <td>0-1-0</td>
+                </tr>
+
+                <tr>
+                    <td>Universal Selector</td>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>0-0-0</td>
+                </tr>
+
+                <tr>
+                    <td>Attribute Selector</td>
+                    <td>[attribute]</td>
+                    <td>[type]</td>
+                    <td>0-0-1</td>
+                </tr>
+
+                <tr>
+                    <td>Attribute Value Selector</td>
+                    <td>[attribute="value"]</td>
+                    <td>[type="text"]</td>
+                    <td>0-0-1</td>
+                </tr>
+
+                <tr>
+                    <td>Pseudo-class Selector</td>
+                    <td>:pseudo-class</td>
+                    <td>:hover, :nth-child</td>
+                    <td>0-0-1</td>
+                </tr>
+
+                <tr>
+                    <td>Pseudo-element Selector</td>
+                    <td>::pseudo-element</td>
+                    <td>::before, ::after</td>
+                    <td>0-0-1</td>
+                </tr>
+
+                <tr>
+                    <td>Descendant Selector</td>
+                    <td>ancestor descendant</td>
+                    <td>div p</td>
+                    <td>Sum of the selectors' specificity values</td>
+                </tr>
+
+                <tr>
+                    <td>Child Selector</td>
+                    <td>parent > child</td>
+                    <td>ul &gt; li</td>
+                    <td>Sum of the selectors' specificity values</td>
+                </tr>
+
+                <tr>
+                    <td>Adjacent Sibling Selector</td>
+                    <td>element + sibling</td>
+                    <td>h2 + p</td>
+                    <td>Sum of the selectors' specificity values</td>
+                </tr>
+
+                <tr>
+                    <td>General Sibling Selecto</td>
+                    <td>element ~ sibling</td>
+                    <td>h2 ~ p</td>
+                    <td>Sum of the selectors' specificity values</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+  </body>
+</html>

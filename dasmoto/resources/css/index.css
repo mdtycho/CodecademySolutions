@@ -1,0 +1,40 @@
+header{
+    background-image: url('../images/pattern.jpeg');
+    text-align: center;
+}
+
+header h1{
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight:bold;
+    color: khaki;
+}
+
+#brushes .section-header{
+    background-color: mediumspringgreen;
+}
+
+#frames .section-header{
+    background-color: lightcoral;
+}
+
+#paint .section-header{
+    background-color: skyblue;
+}
+
+.section-header h2{
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight:bold;
+    color: white;
+}
+
+figure{
+   margin-left: 0;
+}
+
+.link-text{
+    font-family: Helvetica;
+    font-weight: bold;
+    color:blue;
+}

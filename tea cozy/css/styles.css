@@ -1,0 +1,144 @@
+*{
+    font-family:Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity:0.9;
+    text-align: center;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 69px;
+    z-index: 10;
+}
+
+nav .nav-logo{
+    display:inline-flex;
+}
+
+nav img{
+    height: 50px;
+}
+
+nav .nav-items-right{
+    display:inline-flex;
+}
+
+.left-margin{
+    margin-left: 10px;
+}
+
+nav .nav-items-right ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .nav-items-right ul li{
+    text-decoration: underline;
+}
+
+nav ul:last-child{
+    margin-right: 10px;
+}
+/* Main */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+}
+/* Mission */
+#mission{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/images/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 1200px;
+}
+#mission-text h4{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+/* Featured */
+
+#featured{
+    margin-top: 40px;
+}
+
+#featured .tea-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1000px;
+}
+
+#featured .tea-container .item{
+    margin:10px;
+}
+
+#featured .tea-container .item img{
+    width: 300px;
+    height: 200px;
+}
+
+#featured figcaption{
+    margin-top: 10px;
+}
+
+/* Locations */
+
+#locations{
+    display: flex;
+    background-image: url('../assets/images/img-locations-background.jpg');
+    background-repeat: no-repeat;
+    height:500px;
+    width:1200px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+}
+
+#locations .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+#locations .location-item{
+    width: 300px;
+    margin: 20px;
+    opacity: 1;
+    height: 200px;
+}
+
+#locations h2{
+    background-color: transparent;
+    margin: 15px;
+}
+
+/* conclusion */
+.conclusion{
+    height: 200px;
+}
+
+/* footer */
+.footer{
+    position: relative;
+    left: -460px;
+}
